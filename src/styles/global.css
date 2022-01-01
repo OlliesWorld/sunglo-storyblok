@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .bg-growing-underline {
+      background-size: 100% 0.2em;
+      background-position: 0 88%;
+      @apply bg-no-repeat transition-all duration-200;
+    }
+    .bg-growing-underline:hover {
+      background-size: 100% 100%;
+    }
+    .bg-growing-underline:focus {
+      background-size: 100% 100%;
+    }
+  }
+  
+.blend-multiply {
+    mix-blend-mode: multiply;
+}
+
+.drop-cap:first-letter {
+    font-size: 5rem;
+    float: left;
+    line-height: 2rem;
+    @apply font-serif;
+    @apply text-primary;
+    @apply mr-4;
+    @apply my-8;
+}
+
+.bg-white-half {
+    background: linear-gradient(to bottom, #fff 0%, #fff 50%, transparent 50%)
+}
+
+blockquote {
+    @apply text-base;
+    @apply text-primary;
+    
+    @apply font-serif;
+    @apply py-12;
+    @apply text-center;
+    
+    font-style: italic;
+}
+
+.box a {
+    background-color: rgb(255, 103, 0);
+    background-image: linear-gradient(0deg, rgb(255, 103, 0) 10%, rgb(255, 160, 0) 90%);
+    color: white;
+    padding: .5rem;
+    margin-top: 1rem;
+}
+
+.bg-office {
+  background-image: url('../images/sunglo_hero.jpg');
+  background-size: cover;
+}
+
+.bg-pattern {
+  background-image: url('../images/nice_snow.png');
+  background-size: contain; 
+  width: 100%;
+}
