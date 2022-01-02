@@ -1,5 +1,5 @@
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env.production`,
 })
 
 module.exports = {
@@ -39,7 +39,7 @@ module.exports = {
       resolve: 'gatsby-source-storyblok',
       options: {
         
-         accessToken: process.env.STORYBLOK_PUBLIC_TOKEN,
+         accessToken: process.env.GATSBY_STORYBLOK_PUBLIC_TOKEN,
          version: 'published',
          localAssets: true,
        

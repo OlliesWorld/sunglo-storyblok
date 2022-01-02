@@ -1,16 +1,29 @@
 const path = require('path')
-exports.onCreateWebpackConfig = ({ actions }) => {
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+exports.onCreateWebpackConfig = ({ actions, stage, plugins }) => {
+  if (stage === 'build-javascript' || stage === 'develop') {
+    actions.setWebpackConfig({
+      plugins: [
+        plugins.provide({ process: 'process/browser' })
+      ]
+    })
+  }
   actions.setWebpackConfig({
     resolve: {
-      
-      fallback: {
-        fs: false,
-        path: require.resolve("path-browserify")
-    
+             alias: {
+                path: require.resolve("path-browserify")
+             },
+             fallback: {
+               fs: false,
+             }
+          }
+        })
       }
-    }
-  })
-}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
