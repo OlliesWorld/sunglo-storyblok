@@ -15,7 +15,6 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "dotenv": "^10.0.0",
     "fs": "^0.0.1-security",
     "gatsby": "^4.4.0",
     "gatsby-plugin-image": "^1.13.0",
@@ -30,6 +29,7 @@
     "gatsby-source-storyblok": "^3.1.0",
     "gatsby-transformer-remark": "^4.11.0",
     "gatsby-transformer-sharp": "^3.13.0",
+    "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
@@ -44,6 +44,7 @@
     "gatsby-plugin-postcss": "^4.13.0",
     "netlify-cli": "^6.9.17",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.8"
+    "tailwindcss": "^3.0.8",
+    "webpack": "^5.65.0"
   }
 }
