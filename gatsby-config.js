@@ -12,6 +12,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     'gatsby-plugin-postcss',
     {
       resolve: `gatsby-source-filesystem`,
@@ -20,8 +23,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -39,22 +40,14 @@ module.exports = {
       resolve: 'gatsby-source-storyblok',
       options: {
         
-         accessToken: process.env.GATSBY_STORYBLOK_PUBLIC_TOKEN,
+         accessToken: process.env.GATSBY_ACCESSTOKEN_KEY,
          version: 'published',
          localAssets: true,
        
       
       }
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-remark-responsive-iframe`,
-          `gatsby-remark-embed-video`,
-        ],
-      },
-    },
+   
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
