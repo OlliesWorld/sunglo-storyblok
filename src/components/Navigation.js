@@ -30,7 +30,7 @@ return (
   <div className="w-full bg-white ">
    
     <nav className="border-b-4 border-primary ">
-      <div className="container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap">
+      <div className="container mx-auto lg:p-4 flex flex-wrap items-center md:flex-no-wrap">
         <div className="mr-4 md:mr-8 ">
           <Link to="/"> 
           
@@ -38,8 +38,8 @@ return (
           </Link>
         </div>
         
-        <button type="button" className="block ml-20 lg:hidden" onClick={handleClick}>
-          <svg className="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <button type="button" className=" bg-sundark block ml-12 p-2 lg:hidden" onClick={handleClick}>
+          <svg className="h-6 w-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             {isOpen && (
             <path fillRule="evenodd" clipRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
             )}
@@ -56,18 +56,18 @@ return (
               Navigation.allStoryblokEntry.edges.map((edge) => (
                  
                 <li key={edge.node.uuid}>
-                 <Link to={`/${(edge.node.full_slug)}`} prefetch="true" className="lg:w-full w-1/2 block px-4 py-1 md:p-2 lg:px-8 text-black uppercase bg-gradient-to-r from-sundark to-sunlight bg-growing-underline hover:text-white">
+                 <Link to={`/${(edge.node.full_slug)}`} prefetch="true" className="lg:w-full w-1/2 block px-4 py-1 md:p-2 lg:px-8 text-black uppercase bg-gradient-to-r from-sundark  bg-growing-underline ">
                      {edge.node.name} 
                    </Link> 
                    </li>
               ))}
-              <li>
+              {/* <li>
                 <Link to="/Contact" 
                     className="block lg:w-full  w-1/2 uppercase px-4 py-1 md:p-2 rounded-lg lg:px-4 text-black 
                     bg-gradient-to-r from-sundark to-sunlight bg-growing-underline hover:text-white">
                   Contact
                 </Link>
-              </li>
+              </li> */}
           </ul>
           </div>
            <ul className="flex flex-col  border-t md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:border-0">

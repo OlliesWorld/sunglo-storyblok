@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "gatsby": "^4.4.0",
-    "gatsby-cli": "^2.5.15",
+    "gatsby-cli": "^4.4.0",
     "gatsby-plugin-image": "^0.7.2",
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-netlify": "^2.11.1",
