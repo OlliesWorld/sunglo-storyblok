@@ -64,8 +64,8 @@ const EstimateForm = (props) => {
           
               <input className='Form--Input border-2 border-primary h-10 w-72"' type='phone' placeholder='Phone' name='phone'  onChange={handleChange}/>
               <input className='Form--Input border-2 border-primary h-10 w-72"'  type='date' placeholder='Requested Estimate Date' name='date'  />
-              <p>How Can We Assist You?</p>
-              <textarea className='Form--Textarea border-2 border-primary w-72"' placeholder='Message' name='message' rows='8'  onChange={handleChange} required />
+              <p className='text-primary font-bold text-center text-lg backdrop-blur-sm w-1/2 m-auto'>How Can We Assist You?</p>
+              <textarea className='Form--Textarea border-2 border-primary w-full' placeholder='Message' name='message' rows='8'  onChange={handleChange} required />
          
             <div>
               <button className='Button Form--SubmitButton border-2 border-primary bg-primary text-white  w-1/3' type='submit' >Contact Us</button>

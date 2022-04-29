@@ -61,13 +61,7 @@ return (
                    </Link> 
                    </li>
               ))}
-              {/* <li>
-                <Link to="/Contact" 
-                    className="block lg:w-full  w-1/2 uppercase px-4 py-1 md:p-2 rounded-lg lg:px-4 text-black 
-                    bg-gradient-to-r from-sundark to-sunlight bg-growing-underline hover:text-white">
-                  Contact
-                </Link>
-              </li> */}
+             
           </ul>
           </div>
            <ul className="flex flex-col  border-t md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:border-0">
@@ -82,7 +76,7 @@ return (
             </li>
             <li>
               <Link to="/Estimate" 
-              className="block text-xl px-8 py-2 md:p-2 rounded-lg lg:px-4 lg:py-3 bg-primary text-white hover:bg-white hover:text-primary hover:text-4xl"
+              className="block text-xl px-8 py-2 md:p-2 rounded-lg lg:px-4 lg:py-3 bg-primary text-white hover:bg-white hover:text-primary hover:text-md"
               >
                 Free Estimate
               </Link>
