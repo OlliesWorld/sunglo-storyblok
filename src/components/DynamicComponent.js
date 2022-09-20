@@ -34,8 +34,7 @@ const Components = {
   'navbar': NavBar,
   'ctabutton': Ctabutton,
   'estimate': Estimate,
-  'footerbar': FooterBar,
-  
+  'footerbar': FooterBar
 }
 
 const DynamicComponent = ({blok}) => {

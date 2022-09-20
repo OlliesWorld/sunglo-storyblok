@@ -43,9 +43,9 @@ const ContactForm = (props) => {
   };
 
   return (
-    <div className="w-half mr-2">
-    <a className="bg-primary text-white px-4 py-4 text-center w-1/4 ml-8 md:ml-2" href="tel:9703359600">CALL OR TEXT: (970) 335-9600</a>
-    <form data-netlify="true" action="/" name="contactUs" method="post" onSubmit={handleSubmit} className="flex flex-col  space-y-4 ml-6 md:ml-0 w-half">
+    <div className="w-full">
+    <a className="bg-primary text-white text-sm p-4 ml-6 mb-4 text-center w-full" href="tel:9703359600">CALL OR TEXT: (970) 335-9600</a>
+    <form data-netlify="true" action="/" name="contactUs" method="post" onSubmit={handleSubmit} className="flex flex-col  align-center space-y-4">
       <input type="hidden" name="form-name" value="contact-form" />
      
         <input
@@ -54,19 +54,18 @@ const ContactForm = (props) => {
           onChange={handleChange}
           required
           placeholder="Name"
-          className="Form--Input border-2 border-primary h-10 w-72"
+          className="Form--Input border-2 border-primary h-10 w-72 p-2"
         />
-      
+
+              <input className='Form--Input border-2 border-primary h-10 w-72 p-2' type='email' placeholder='Email' name='email' onChange={handleChange} required />
           
-              <input className='Form--Input border-2 border-primary h-10 w-72' type='email' placeholder='Email' name='email' onChange={handleChange} required />
-          
-              <input className='Form--Input border-2 border-primary h-10 w-72' type='phone' placeholder='Phone' name='phone'  onChange={handleChange}/>
+              <input className='Form--Input border-2 border-primary h-10 w-72 p-2' type='phone' placeholder='Phone' name='phone'  onChange={handleChange}/>
           
               <p>How Can We Assist You?</p>
-              <textarea className='Form--Textarea border-2 border-primary w-72' placeholder='Message' name='message' rows='8' minLength="8" onChange={handleChange} required />
+              <textarea className='Form--Textarea border-2 border-primary w-72 p-2' placeholder='Message' name='message' rows='8' minLength="8" onChange={handleChange} required />
          
             <div>
-              <button className='Button Form--SubmitButton border-2 border-primary bg-primary text-white  w-1/3' type='submit' >Contact Us</button>
+              <button className='Button Form--SubmitButton border-2 border-primary bg-primary text-white  w-40' type='submit' >Contact Us</button>
             </div>
          
         </form>
@@ -75,4 +74,3 @@ const ContactForm = (props) => {
     )
 }
 export default ContactForm
-

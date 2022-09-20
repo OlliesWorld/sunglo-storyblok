@@ -56,14 +56,14 @@ const EstimateForm = (props) => {
           onChange={handleChange}
           required
           placeholder="Name"
-          className='Form--Input border-2 border-primary h-10 "'
+          className='Form--Input border-2 border-primary h-10 background-blue-200'
         />
       
           
-              <input className='Form--Input border-2 border-primary h-10 w-72"' type='email' placeholder='Email' name='email' onChange={handleChange} required />
+              <input className='Form--Input border-2 border-primary h-10 w-full backdrop-blur-sm' type='email' placeholder='Email' name='email' onChange={handleChange} required />
           
-              <input className='Form--Input border-2 border-primary h-10 w-72"' type='phone' placeholder='Phone' name='phone'  onChange={handleChange}/>
-              <input className='Form--Input border-2 border-primary h-10 w-72"'  type='date' placeholder='Requested Estimate Date' name='date'  />
+              <input className='Form--Input border-2 border-primary h-10 w-full' type='phone' placeholder='Phone' name='phone'  onChange={handleChange}/>
+              <input className='Form--Input border-2 border-primary h-10 w-full'  type='date' placeholder='Requested Estimate Date' name='date'  />
               <p className='text-primary font-bold text-center text-lg backdrop-blur-sm w-1/2 m-auto'>How Can We Assist You?</p>
               <textarea className='Form--Textarea border-2 border-primary w-full' placeholder='Message' name='message' rows='8'  onChange={handleChange} required />
          

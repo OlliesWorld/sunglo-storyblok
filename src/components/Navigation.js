@@ -27,10 +27,10 @@ const Nav = () => {
   //  console.log(Navigation)
 
 return (
-  <div className="w-full bg-white ">
+  <div className="w-full bg-white mt-4">
    
     <nav className="border-b-4 border-primary ">
-      <div className="container mx-auto lg:p-4 flex flex-wrap items-center md:flex-no-wrap">
+      <div className="container mx-auto lg:p-4 flex flex-wrap items-center md:flex-no-wrap mt-4">
         <div className="mr-4 md:mr-8 ">
           <Link to="/"> 
           
